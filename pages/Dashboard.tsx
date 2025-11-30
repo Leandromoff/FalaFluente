@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { CEFRLevel, Skill, ExerciseSet } from '../types';
-import { LEVELS, SKILLS, GRAMMAR_TOPICS, VOCAB_TOPICS } from '../constants';
-import { generateExercise } from '../services/geminiService';
-import Quiz from '../components/Quiz';
-import Lesson from '../components/Lesson';
+import { CEFRLevel, Skill, ExerciseSet } from '../types.ts';
+import { LEVELS, SKILLS, GRAMMAR_TOPICS, VOCAB_TOPICS } from '../constants.ts';
+import { generateExercise } from '../services/geminiService.ts';
+import Quiz from '../components/Quiz.tsx';
+import Lesson from '../components/Lesson.tsx';
 import { Loader2, ChevronRight, Play, BookOpen, PenTool } from 'lucide-react';
 
 const Dashboard: React.FC = () => {
@@ -163,7 +163,7 @@ const Dashboard: React.FC = () => {
               <div className={`absolute top-0 left-0 w-2 h-full rounded-l-xl ${lvl.color}`} />
               <div className="flex items-center justify-between mb-2">
                 <span className={`text-2xl font-bold ${lvl.text}`}>{lvl.id}</span>
-                <ChevronRight className="h-5 w-5 text-slate-300 group-hover:text-slate-500" />
+                <ChevronRight className="h-5 w-6 text-slate-300 group-hover:text-slate-500" />
               </div>
               <p className="text-slate-600 font-medium">{lvl.label}</p>
             </button>

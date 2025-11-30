@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ExerciseSet } from '../types';
+import { ExerciseSet } from '../types.ts';
 import { CheckCircle, XCircle, AlertCircle, RefreshCw, ArrowRight, Volume2, Square } from 'lucide-react';
 
 interface QuizProps {

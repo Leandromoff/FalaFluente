@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Book, Menu, X, Github } from 'lucide-react';
-import { LEVELS } from '../constants';
+import { LEVELS } from '../constants.ts';
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);

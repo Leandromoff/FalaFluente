@@ -1,4 +1,4 @@
-import { CEFRLevel, Skill, Topic } from './types';
+import { CEFRLevel, Skill, Topic } from './types.ts';
 import { BookOpen, PenTool, MessageCircle, Mic, Layers, GraduationCap } from 'lucide-react';
 
 export const LEVELS = [

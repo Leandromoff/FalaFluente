@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { LessonSection } from '../types';
+import { LessonSection } from '../types.ts';
 import { BookOpen, Check, Volume2, Square } from 'lucide-react';
 
 interface LessonProps {
